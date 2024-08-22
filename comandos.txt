@@ -1,0 +1,6 @@
+tsc index.ts        ----->>>>>      va a transformar el archivo index.ts    en index.js
+node index.js       ----->>>>>      correr el index.js
+
+tsc --outDir dist   index.ts    ------>>>>>     crea un js en la distribucion de la carpeta llamada dist
+tsc --outDir dist   index.ts --watch    ------>>>>>   con watch, ademas nos lleva un monitoreo de cambios al ts
+tsx --help      ----->>>>>f1 
