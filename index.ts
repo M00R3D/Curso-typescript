@@ -8,6 +8,9 @@ let myTypeString: string = 'Hello world!';
 let myTypeNumber: number = 33;
 let myTypeBoolean: boolean = true;
 
+
+
+
 // Arrays
 let arrNumber: number[] = [1, 2, 3];
 // También puedes declarar un array de números de esta manera:
@@ -25,3 +28,14 @@ players = [
   [2, 'Durant'],
   [3, 'Curry'],
 ];
+
+
+let myVariable;
+
+let myVariable1:string;
+
+let myVariable2:boolean=true;
+
+
+//union
+let myVariable3:boolean |number |null;
