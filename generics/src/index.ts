@@ -3,10 +3,10 @@ interface Person{
     name: string;
 }
 
-class People{
-    private items:Person[]=[];
+class DataCollection{
+    private items:dataType[]=[];
 
-    addItem(newItem:Person):void{
+    addItem(newItem:dataType):void{
         this.items.push(newItem);
     }
     getItems():void{
@@ -15,12 +15,12 @@ class People{
     getNames():string[]{
         return this.items.map((item)=>item.name);
     }
-    getItemById(id:number):Person | undefined{
-        return this.items.find((item:Person)=>item.id===id);
+    getItemById(id:number):dataType | undefined{
+        return this.items.find((item:dataType)=>item.id===id);
     }
 }
 
-const personCollection = new People();
+const personCollection = new DataCollection();
 const newData={
     id:1,
     name:'Job Moore'
@@ -44,4 +44,12 @@ interface Product{
     id: number;
     name: string;
     price: number;
+}
+
+type dataType = Person | Product;
+
+const productCollection= new DataCollection();
+const newData2={
+    id:2,
+    name:'beer'
 }
